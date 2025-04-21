@@ -1,0 +1,20 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import ProductCard from '~/components/widgets/ProductCard.astro';
+
+const metadata = {
+  title: 'Galletitas Corazoncitos',
+};
+---
+
+<Layout metadata={metadata}>
+  <ProductCard
+    title="Galletitas Corazoncitos"
+    description="Un clásico irresistible. Crocantes, dulces y con ese sabor inconfundible que nos acompaña desde 2001. Ideales para compartir en familia o disfrutar a cualquier hora del día."
+    images={[
+      '/images/products/corazoncitos.jpg',
+    ]}
+    alt="Galletitas Celosas"
+    link="/contact"
+  />
+</Layout>
