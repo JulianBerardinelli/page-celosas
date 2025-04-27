@@ -1,4 +1,24 @@
 ---
+
+---
+
+<script is:inline>
+  function applyTheme() {
+    document.documentElement.classList.remove('dark');
+    
+    const matches = document.querySelectorAll('[data-aw-toggle-color-scheme] > input');
+    if (matches && matches.length) {
+      matches.forEach((elem) => {
+        elem.checked = true; // siempre marcados como light
+      });
+    }
+  }
+
+  // Forzamos siempre light apenas carga
+  applyTheme();
+</script>
+
+<!-- ---
 import { UI } from 'astrowind:config';
 
 // TODO: This code is temporary
@@ -30,4 +50,4 @@ import { UI } from 'astrowind:config';
   } else {
     applyTheme('light');
   }
-</script>
+</script> -->
