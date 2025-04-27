@@ -73,13 +73,7 @@ const {
           media && (
             <div class="relative m-auto max-w-4xl">
               {'video' in media ? ( // ✅ Detecta si `media` tiene un video
-                <video
-                  class="mx-auto w-full rounded-lg shadow-lg"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                >
+                <video class="mx-auto w-full rounded-lg shadow-lg" autoplay loop muted playsinline>
                   <source src={media.video} type="video/mp4" />
                   Tu navegador no soporta el formato de video.
                 </video>

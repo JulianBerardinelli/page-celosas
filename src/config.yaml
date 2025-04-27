@@ -11,7 +11,7 @@ metadata:
   title:
     default: Galletitas Celosas
     template: '%s — Celosas'
-  description: "Página Web Oficial de Galletitas Celosas"
+  description: 'Página Web Oficial de Galletitas Celosas'
   robots:
     index: true
     follow: true

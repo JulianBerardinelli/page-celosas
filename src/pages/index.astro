@@ -26,7 +26,6 @@ const metadata = {
           text: 'Contacto',
           href: '/contact',
         },
-
       ]}
       isSticky
     />
@@ -48,11 +47,10 @@ const metadata = {
     <div class="relative">
       <!-- Imagen flotante de la chica -->
       <img
-      class="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 drop-shadow-lg animate-float"
-      src={nenaPng.src}
-      alt="Chica sobrepuesta"
-    />
-    
+        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 drop-shadow-lg animate-float"
+        src={nenaPng.src}
+        alt="Chica sobrepuesta"
+      />
     </div>
 
     <Fragment slot="title">
@@ -60,7 +58,6 @@ const metadata = {
       <span class="text-accent dark:text-white highlight inline-flex items-center">
         Galletitas
         <img class="w-40 ml-2" src={celosasLogo.src} alt="logo Galletitas Celosas" />
-        
       </span>
     </Fragment>
 
@@ -78,12 +75,12 @@ const metadata = {
       {
         title: 'Compromiso con la excelencia',
         description:
-        'Cada detalle de nuestra producción está pensado para garantizar un producto de calidad superior. La combinación de tecnología de vanguardia con procesos perfeccionados a lo largo del tiempo nos permite ofrecer galletitas con el sabor y la textura que nos caracteriza.',
-    },
-    {
-      title: 'La precisión como estándar',
-      description: `Nuestro proceso de elaboración es el resultado de una sinergia perfecta entre innovación y cuidado artesanal. <br /> Desde la selección de ingredientes hasta el control de cada etapa, nos aseguramos de mantener un equilibrio ideal entre tradición y modernidad. <br /> Un producto pensado para los paladares más exigentes.`,
-    }
+          'Cada detalle de nuestra producción está pensado para garantizar un producto de calidad superior. La combinación de tecnología de vanguardia con procesos perfeccionados a lo largo del tiempo nos permite ofrecer galletitas con el sabor y la textura que nos caracteriza.',
+      },
+      {
+        title: 'La precisión como estándar',
+        description: `Nuestro proceso de elaboración es el resultado de una sinergia perfecta entre innovación y cuidado artesanal. <br /> Desde la selección de ingredientes hasta el control de cada etapa, nos aseguramos de mantener un equilibrio ideal entre tradición y modernidad. <br /> Un producto pensado para los paladares más exigentes.`,
+      },
     ]}
     media={{
       video: '/videos/video1.mp4',

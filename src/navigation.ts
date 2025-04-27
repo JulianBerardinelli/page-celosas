@@ -132,15 +132,11 @@ export const footerData = {
     // },
     {
       title: 'Soporte técnico',
-      links: [
-        { text: 'Contacto', href: '/contact' },
-      ],
+      links: [{ text: 'Contacto', href: '/contact' }],
     },
     {
       title: 'Montenievas SRL',
-      links: [
-        { text: 'Sobre Nosotros', href: '/about' },
-      ],
+      links: [{ text: 'Sobre Nosotros', href: '/about' }],
     },
   ],
   secondaryLinks: [
@@ -148,9 +144,20 @@ export const footerData = {
     { text: 'Politicas de privacidad', href: '#' },
   ],
   socialLinks: [
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/celosasgalletitas/?hl=es', target: '_blank' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/CelosasGalletitas', target: '_blank' },
-    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/5491130000000', target: '_blank' },],
+    {
+      ariaLabel: 'Instagram',
+      icon: 'tabler:brand-instagram',
+      href: 'https://www.instagram.com/celosasgalletitas/?hl=es',
+      target: '_blank',
+    },
+    {
+      ariaLabel: 'Facebook',
+      icon: 'tabler:brand-facebook',
+      href: 'https://www.facebook.com/CelosasGalletitas',
+      target: '_blank',
+    },
+    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/5491130000000', target: '_blank' },
+  ],
   footNote: `
     <img class="w-5 md:w-6  md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://www.julianberardinelli.com/logos/logo.png" alt="onWidget logo" loading="lazy"></img>
     Desarollado por <a class="text-blue-600 font-bold underline dark:text-muted" href="https://julianberardinelli.com/"> Julián Berardinelli</a> · Todos los derechos reservados.
