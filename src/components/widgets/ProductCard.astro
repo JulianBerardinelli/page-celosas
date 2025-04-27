@@ -51,14 +51,15 @@ const { title, description, images = [], alt = '', link = '#' } = Astro.props;
 </section>
 
 <script is:inline>
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function changeImage(element) {
     const mainImage = document.getElementById('main-image');
     if (mainImage) {
       mainImage.src = element.dataset.img;
     }
 
-    // Opcional: resaltar miniatura seleccionada
     document.querySelectorAll('[data-img]').forEach((img) => img.classList.remove('ring', 'ring-primary'));
     element.classList.add('ring', 'ring-primary');
   }
 </script>
+
