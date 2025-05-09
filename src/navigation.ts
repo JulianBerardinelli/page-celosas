@@ -156,7 +156,6 @@ export const footerData = {
       href: 'https://www.facebook.com/CelosasGalletitas',
       target: '_blank',
     },
-    { ariaLabel: 'Whatsapp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/5491130000000', target: '_blank' },
   ],
   footNote: `
     <img class="w-5 md:w-6  md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://www.julianberardinelli.com/logos/logo.png" alt="onWidget logo" loading="lazy"></img>
