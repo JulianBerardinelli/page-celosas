@@ -135,13 +135,13 @@ export const footerData = {
       links: [{ text: 'Contacto', href: '/contact' }],
     },
     {
-      title: 'Montenievas SRL',
+      title: 'Montenievas',
       links: [{ text: 'Sobre Nosotros', href: '/about' }],
     },
   ],
   secondaryLinks: [
-    { text: 'Terminos y condiciones', href: '#' },
-    { text: 'Politicas de privacidad', href: '#' },
+    { text: 'Terminos y condiciones', href: '/terms' },
+    { text: 'Politicas de privacidad', href: '/privacy' },
   ],
   socialLinks: [
     {
