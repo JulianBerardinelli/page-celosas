@@ -1,27 +1,64 @@
----
+<style>
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+</style>
 
----
+<div class="relative w-full text-sm hidden md:block z-10">
+  <div class="relative bg-[var(--aw-color-bg-page)] text-[var(--aw-color-text-muted)] border-b border-transparent shadow-sm dark:border-transparent">
 
-<div
-  class="dark text-muted text-sm bg-red dark:bg-transparent dark:border-b dark:border-slate-800 dark:text-slate-400 hidden md:flex gap-1 overflow-hidden px-3 py-2 relative text-ellipsis whitespace-nowrap"
->
-  <span class="bg-blue-900 font-semibold px-1 py-0.5 text-xs mr-0.5 rtl:mr-0 rtl:ml-0.5 inline-block">Nuevo</span>
-  <a
-    href="https://www.instagram.com/celosasgalletitas/?hl=es"
-    class="text-muted hover:underline dark:text-slate-400 font-medium">Bienvenidos a Nuestra Página web!»</a
-  >
-  <a
-    href="https://www.instagram.com/celosasgalletitas/?hl=es"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="flex items-center gap-2 ml-auto text-sm text-gray-600 hover:text-pink-600"
-    title="Galletitas Celosas - Seguinos en Instagram"
-  >
-    <svg fill="currentColor" viewBox="0 0 24 24" class="w-5 h-5">
-      <path
-        d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.75-.9a.9.9 0 1 1-1.8 0 .9.9 0 0 1 1.8 0z"
-      ></path>
-    </svg>
-    @celosasgalletitas
-  </a>
+    <!-- CONTENIDO -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between">
+      <!-- Lado izquierdo -->
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <div class="flex items-center gap-2 text-accent">
+          <!-- Mail icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+          <span>info@montenievas.com.ar</span>
+        </div>
+        <div class="flex items-center gap-2 text-accent">
+          <!-- Phone icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.2 1.38.72 2.7 1.55 3.86a2 2 0 0 1-.45 2.6l-1.27 1a16 16 0 0 0 6 6l1-1.27a2 2 0 0 1 2.6-.45c1.16.83 2.48 1.35 3.86 1.55a2 2 0 0 1 1.72 2z" />
+          </svg>
+          <span>+54 11 4238 6346</span>
+        </div>
+      </div>
+
+      <!-- Lado derecho -->
+      <a
+        href="https://www.instagram.com/celosasgalletitas"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex items-center gap-2 text-accent font-medium hover:underline"
+      >
+        <!-- Instagram icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+        </svg>
+        @celosasgalletitas
+      </a>
+    </div>
+
+    <!-- 🌈 Gradiente MULTICOLOR animado en loop continuo -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-[3px] translate-y-full"
+      style="
+        background: linear-gradient(90deg, #ff0800, #ed1c23, #213f9a, #0040ff , #0081bc);
+        background-size: 600% 100%;
+        animation: gradientMove 10s linear infinite;
+        box-shadow: 0 4px 10px rgba(0, 129, 188, 0.3);
+      "
+    ></div>
+  </div>
 </div>

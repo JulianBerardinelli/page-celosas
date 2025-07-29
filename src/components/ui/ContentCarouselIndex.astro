@@ -1,0 +1,29 @@
+---
+// ContentCarouselIndex.astro
+import Carousel from './Carousel.astro';
+import Button from './Button.astro';
+
+---
+
+<Carousel>
+
+<!-- Slide 1 -->
+<!-- Slide 3: GIF optimizado -->
+<div class="carousel-slide relative">
+    <img
+      src="/videos/galletitas-spot.gif"
+      alt="Spot Galletitas Celosas Argentina"
+      class="absolute inset-0 w-full h-full object-cover -z-10"
+      loading="lazy"
+    />
+  </div>
+  
+  
+
+
+  <!-- Slide 2 -->
+  <div class="carousel-slide relative">
+    <picture>
+      <img src="/images/car-1.jpg" alt="Sabores de repostería" class="absolute inset-0 w-full h-full object-cover -z-10" />
+    </picture>
+  </div>

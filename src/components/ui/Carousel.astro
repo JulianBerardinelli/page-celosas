@@ -1,0 +1,124 @@
+---
+
+---
+<style is:inline>
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  height: 25vh; /* Mobile por defecto */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  height: 25vh; /* Mobile por defecto */
+  position: relative;
+  flex-shrink: 0;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-arrow:hover {
+  transform: translateY(-50%) scale(2.1);
+}
+
+.carousel-arrow-left {
+  left: 1rem;
+}
+
+.carousel-arrow-right {
+  right: 1rem;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.carousel-dot {
+  width: 1.5rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #0081bc;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo mobile */
+@media (max-width: 768px) {
+  .carousel-arrow {
+    display: none;
+  }
+}
+
+/* Estilo para pantallas grandes */
+@media (min-width: 769px) {
+  .carousel-container,
+  .carousel-slide {
+    height: 90vh;
+  }
+}
+
+  </style>
+  
+  </style>
+  
+  <div class="carousel-container" id="carousel-container">
+    <div class="carousel-track" id="carousel-track">
+      <slot />
+    </div>
+  
+    <button id="prevBtn" class="carousel-arrow carousel-arrow-left">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-chevron-left">
+        <path d="m15 18-6-6 6-6"/>
+      </svg>
+    </button>
+  
+    <button id="nextBtn" class="carousel-arrow carousel-arrow-right">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-chevron-right">
+        <path d="m9 18 6-6-6-6"/>
+      </svg>
+    </button>
+  
+    <div id="carousel-indicators" class="carousel-indicators"></div>
+  </div>
+  
+  <script type="module" src="/scripts/carousel.js" is:inline />

@@ -5,11 +5,12 @@ import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Content from '~/components/widgets/Content.astro';
 import celosasLogo from '../assets/images/celosas-logo.png';
-import Item1 from '../assets/images/item-1.png';
+import Item1 from '../assets/images/item-1.jpg';
 import nenaPng from '../assets/images/nena.png';
 
 import { headerData } from '~/navigation';
 import Features2 from '~/components/widgets/Features2.astro';
+import ContentCarouselIndex from '~/components/ui/ContentCarouselIndex.astro';
 
 const metadata = {
   title: 'Inicio - Celosas',
@@ -32,6 +33,8 @@ const metadata = {
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
+
+  <ContentCarouselIndex/>
 
   <Hero2
     tagline="La más rica a toda hora 🎶"
@@ -198,7 +201,7 @@ const metadata = {
       },
       {
         title: 'Teléfono',
-        description: '+54 (11) 1234-5678',
+        description: '+54 11 4238 6346',
         icon: 'tabler:headset',
       },
       {
