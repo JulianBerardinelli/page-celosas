@@ -9,13 +9,27 @@ import Button from './Button.astro';
 
 <!-- Slide 1 -->
 <!-- Slide 3: GIF optimizado -->
-<div class="carousel-slide relative">
+<!-- <div class="carousel-slide relative">
     <img
-      src="/videos/galletitas-spot.gif"
+      src="/videos/galletitas-spot-1.gif"
       alt="Spot Galletitas Celosas Argentina"
       class="absolute inset-0 w-full h-full object-cover -z-10"
       loading="lazy"
     />
+  </div> -->
+
+  <!-- Slide 3: VIDEO -->
+<div class="carousel-slide relative">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover -z-10"
+    >
+      <source src="/videos/galletitas-spot-1.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
   </div>
   
   
