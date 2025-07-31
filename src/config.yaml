@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Galletitas Celosas
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/image-og.jpg'
         width: 1200
         height: 628
     type: website
