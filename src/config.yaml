@@ -1,6 +1,6 @@
 site:
   name: Celosas
-  site: 'https://Celosas.vercel.app'
+  site: 'https://celosas.com.ar'
   base: '/'
   trailingSlash: false
 
