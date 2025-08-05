@@ -1,0 +1,67 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import ProductBannerCard from '~/components/widgets/ProductBannerCard.astro';
+
+interface FlavorCardProps {
+  title: string;
+  description?: string;
+  image: string;
+  href: string;
+  buttonText?: string;
+}
+
+interface Props {
+  id?: string;
+  tagline?: string;
+  title?: string;
+  subtitle?: string;
+  items?: FlavorCardProps[];
+}
+
+const {
+  id,
+  tagline,
+  title,
+  subtitle,
+  items = [],
+} = Astro.props as Props;
+---
+
+<WidgetWrapper id={id} containerClass="relative z-0">
+  <Headline
+    tagline={tagline}
+    title={title}
+    subtitle={subtitle}
+    classes={{
+      container: 'text-center max-w-3xl mx-auto',
+      title: 'text-4xl md:text-5xl',
+    }}
+  />
+
+  {items.length === 3 ? (
+    <div class="relative mt-10">
+
+      <!-- Nena decorativa solo en desktop -->
+      <img
+        src="/images/nena-blur.png"
+        alt="Marca Celosas"
+        class="hidden lg:block absolute top-0 left-0 w-60 lg:w-[410px] lg:top-20 xl:w-[450px] xl:top-0 opacity-90 z-0 transform scale-125 -translate-x-8 -translate-y-6 pointer-events-none"
+      />
+
+      <!-- Grilla con cards -->
+      <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full justify-items-center">
+        <!-- Espacio para la nena solo en desktop -->
+        <div class="hidden lg:block"></div>
+
+        <!-- 3 cards -->
+        {items.map((item) => <ProductBannerCard {...item} />)}
+      </div>
+    </div>
+  ) : (
+    <!-- Layout alternativo -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mt-10">
+      {items.map((item) => <ProductBannerCard {...item} />)}
+    </div>
+  )}
+</WidgetWrapper>

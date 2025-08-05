@@ -1,0 +1,34 @@
+---
+import ProductBannerContent from "./ProductBannerContent.astro"
+
+
+---
+<ProductBannerContent
+id="familias"
+tagline="Conoce"
+title='Nuestra familia de <span class="animate-gradient-text">Productos</span>'
+subtitle=""
+items={[
+  {
+    title: 'Galletitas Tradicionales',
+    image: '/images/banner/tradicionales-real.jpg',
+    href: '/products/tradicionales',
+    buttonText: 'Ver más',
+    description:'Nuestras galletitas más aclamadas, con su característica forma de bananita y un irresistible semi baño de chocolate las convierten en la mejor opción para los desayunos, meriendas, y disfrutar a toda hora.'
+  },
+  {
+    title: 'Polvorones',
+    image: '/images/banner/polvorones-real.jpg',
+    href: '/products/polvorones',
+    buttonText: 'Ver más',
+    description: 'Nuestros Polvorones dulces y crujientes con un delicioso sabor a vainilla, que las convierte en el mejor compañero para cualquier momento del día.'
+  },
+  {
+    title: 'Galletitas Corazones',
+    image: '/images/banner/corazones-real.jpg',
+    href: '/products/corazoness',
+    buttonText: 'Ver más',
+    description: 'Con intenso sabor a naranja y baño completo de nuestro más puro chocolate, estas galletitas se robarán tu corazón. Su combinación de cítrico y dulce la hace ideal para los amantes de los gustos equilibrados.'
+  },
+]}
+/>

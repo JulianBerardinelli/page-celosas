@@ -38,8 +38,8 @@ export const headerData = {
           href: getPermalink('/products/polvorones'),
         },
         {
-          text: 'Corazoncitos',
-          href: getPermalink('/products/corazoncitos'),
+          text: 'Corazones',
+          href: getPermalink('/products/corazones'),
         },
       ],
     },
@@ -117,7 +117,7 @@ export const footerData = {
       links: [
         { text: 'Tradicionales', href: '/products/tradicionales' },
         { text: 'Polvorones', href: '/products/polvorones' },
-        { text: 'Corazoncitos', href: '/products/corazoncitos' },
+        { text: 'Corazones', href: '/products/corazones' },
       ],
     },
     // {

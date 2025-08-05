@@ -11,6 +11,7 @@ import nenaPng from '../assets/images/nena.png';
 import { headerData } from '~/navigation';
 import Features2 from '~/components/widgets/Features2.astro';
 import ContentCarouselIndex from '~/components/ui/ContentCarouselIndex.astro';
+import ProductBannerContainer from '~/components/widgets/ProductBannerContainer.astro';
 
 const metadata = {
   title: 'Inicio - Celosas',
@@ -36,7 +37,9 @@ const metadata = {
 
   <ContentCarouselIndex/>
 
-  <Hero2
+  <ProductBannerContainer/>
+
+  <!-- <Hero2
     tagline="La más rica a toda hora 🎶"
     actions={[
       { variant: 'primary', target: '_blank', text: 'Contacto', href: '/contact' },
@@ -48,7 +51,7 @@ const metadata = {
     }}
   >
     <div class="relative">
-      <!-- Imagen flotante de la chica -->
+      
       <img
         class="absolute top-0 left-1/2 transform -translate-x-1/2 w-48 drop-shadow-lg animate-float"
         src={nenaPng.src}
@@ -67,7 +70,7 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="hidden sm:inline"> Por <span class="font-semibold">Montenievas SRL</span></span>
     </Fragment>
-  </Hero2>
+  </Hero2> -->
 
   <!-- Features Widget **************** -->
   <Content
