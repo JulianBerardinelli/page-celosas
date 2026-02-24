@@ -1,23 +1,11 @@
 ---
 // ContentCarouselIndex.astro
 import Carousel from './Carousel.astro';
-
 ---
 
 <Carousel>
-
-<!-- Slide 1 -->
-<!-- Slide 3: GIF optimizado -->
-<!-- <div class="carousel-slide relative">
-    <img
-      alt="Spot Galletitas Celosas Argentina"
-      class="absolute inset-0 w-full h-full object-cover -z-10"
-      loading="lazy"
-    />
-  </div> -->
-
-  <!-- Slide 3: VIDEO -->
-<div class="carousel-slide relative">
+  <!-- Slide 1: VIDEO -->
+  <div class="carousel-slide relative">
     <video
       autoplay
       loop
@@ -29,9 +17,6 @@ import Carousel from './Carousel.astro';
       Tu navegador no soporta videos HTML5.
     </video>
   </div>
-  
-  
-
 
   <!-- Slide 2 -->
   <div class="carousel-slide relative">
@@ -39,3 +24,4 @@ import Carousel from './Carousel.astro';
       <img src="/images/car-1.jpg" alt="Sabores de repostería" class="absolute inset-0 w-full h-full object-cover -z-10" />
     </picture>
   </div>
+</Carousel>

@@ -10,6 +10,7 @@ En Celosas Argentinas respetamos tu privacidad. Esta política explica qué dato
 ## Qué datos recopilamos
 
 Solo recopilamos datos básicos de navegación, como:
+
 - Información sobre tu dispositivo (tipo, navegador, idioma)
 - Páginas visitadas y tiempo en el sitio
 - Cookies que nos ayudan a mejorar tu experiencia
@@ -19,6 +20,7 @@ No recopilamos ni almacenamos datos personales sensibles ni información de pago
 ## Cómo usamos tus datos
 
 Usamos esta información únicamente para:
+
 - Mejorar nuestro sitio web y la experiencia del usuario
 - Analizar qué productos generan más interés
 - Garantizar la seguridad y funcionamiento correcto del sitio
@@ -32,6 +34,7 @@ Utilizamos cookies para que el sitio funcione correctamente y para entender mejo
 ## Tus derechos
 
 Podés contactarnos en cualquier momento para:
+
 - Consultar qué datos tenemos sobre vos
 - Pedir que los actualicemos o eliminemos
 
@@ -42,4 +45,4 @@ Podemos actualizar esta política de vez en cuando. Siempre publicaremos aquí l
 ## Contacto
 
 Si tenés preguntas sobre esta política, escribinos a:
-**contacto@celosasargentinas.com**
+**info@montenievas.com.ar**

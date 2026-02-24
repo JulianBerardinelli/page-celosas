@@ -25,4 +25,4 @@ Nos reservamos el derecho de modificar estos términos en cualquier momento. Los
 
 ## Contacto
 
-Para consultas, podés escribirnos a: contacto@celosasargentinas.com
+Para consultas, podés escribirnos a: info@montenievas.com.ar
